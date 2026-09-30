@@ -1,0 +1,83 @@
+# ====================================================================
+# SYSTEM & ENVIRONMENT CONFIGURATIONS
+# ====================================================================
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+Lib/
+Scripts/
+pyvenv.cfg
+.env
+.env.local
+.env.*.local
+
+# ====================================================================
+# PYTHON RUNTIME & CACHE ARTIFACTS
+# ====================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.pstat
+.pytest_cache/
+.pypy_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ====================================================================
+# LOCAL COLD-STORAGE DATA VOLUMES (Crucial for 8GB RAM local boundaries)
+# ====================================================================
+# Exclude raw financial datasets, legal contract text fragments, and test PDFs
+data/
+*.pdf
+*.txt
+*.csv
+*.tsv
+*.json
+
+# Un-ignore template files if needed for explicit reference structure
+!src/dbt_pipeline/models/staging/*.sql
+!src/dbt_pipeline/models/marts/*.sql
+
+# ====================================================================
+# MACHINE LEARNING SERIALIZED WEIGHTS & EMBEDDINGS
+# ====================================================================
+# Exclude heavy trained LightGBM models, Scikit-Learn vectorizer pickles, and encoders
+src/ml/models/lightgbm_finrisk.model
+src/ml/models/*.pkl
+*.model
+*.pkl
+*.bst
+*.onnx
+
+# MLflow Tracking Metrics and System Artifacts Cache
+mlruns/
+.mlflow/
+mlflow.db
+
+# ====================================================================
+# NATIVE IDE & DEVELOPER TOOL SETTINGS
+# ====================================================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+
+# ====================================================================
+# DBT LOGS & LOCAL COMPILED TARGETS
+# ====================================================================
+src/dbt_pipeline/target/
+src/dbt_pipeline/dbt_packages/
+src/dbt_pipeline/logs/
+*.log
+dbt_project.yml.user
