@@ -1,10 +1,5 @@
 # FinRisk Guard
 
-[![FastAPI Engine](https://shields.io)](https://tiangolo.com)
-[![Data Warehouse](https://shields.io)](https://getdbt.com)
-[![Database](https://shields.io)](https://mysql.com)
-[![Machine Learning](https://shields.io)](https://readthedocs.io)
-
 An asynchronous, decoupled **SEC Compliance & Portfolio Risk Intelligence Data Pipeline** built for high-throughput, low-latency financial text auditing. 
 
 The system natively ingests multi-format regulatory disclosures (SEC 10-K/10-Q, compliance filings, financial news), processes text through an optimized structural NLP layout parser, runs asymmetric risk-sentiment sequence classification via an imbalance-corrected machine learning ensemble, and materializes production-ready data warehouse views using an elite semantic modeling execution layer.
