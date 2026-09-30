@@ -1,0 +1,32 @@
+# --- Core API Microservice Layer ---
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+
+# --- Database Communication (MySQL Core) ---
+PyMySQL
+cryptography
+
+# --- NLP & Parsing (Memory-Constrained Settings) ---
+spacy
+pandas
+numpy
+
+# --- Machine Learning & Feature Optimization ---
+scikit-learn
+xgboost
+lightgbm
+imbalanced-learn
+
+# --- System Telemetry & Tracking Tools ---
+mlflow
+
+# --- frontend ---
+streamlit
+
+# --- Engine Blueprint (Used for SQL Parsing & Lineage) ---
+dbt-core
+dbt-postgres
+sqlglot
+
