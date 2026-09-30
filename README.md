@@ -1,10 +1,5 @@
 # FinRisk Guard
 
-[![FastAPI Engine](https://shields.io)](https://tiangolo.com)
-[![Data Warehouse](https://shields.io)](https://getdbt.com)
-[![Database](https://shields.io)](https://mysql.com)
-[![Machine Learning](https://shields.io)](https://readthedocs.io)
-
 An asynchronous, decoupled **SEC Compliance & Portfolio Risk Intelligence Data Pipeline** built for high-throughput, low-latency financial text auditing. 
 
 The system natively ingests multi-format regulatory disclosures (SEC 10-K/10-Q, compliance filings, financial news), processes text through an optimized structural NLP layout parser, runs asymmetric risk-sentiment sequence classification via an imbalance-corrected machine learning ensemble, and materializes production-ready data warehouse views using an elite semantic modeling execution layer.
@@ -13,7 +8,7 @@ The system natively ingests multi-format regulatory disclosures (SEC 10-K/10-Q, 
 
 ## 🏗️ Architectural Overview & Design Patterns
 
-The platform is explicitly built to follow **2026 enterprise microservices trends**, discarding standard flat Jupyter notebooks in favor of production software constraints. It is strictly engineered to run locally with zero-RAM-overhead on a resource-constrained hardware ceiling (**8GB RAM, 512GB SSD**) without memory frame drops or socket degradation.
+The platform is explicitly built to follow **2026 enterprise microservices**, discarding standard flat Jupyter notebooks in favor of production software constraints. It is strictly engineered to run locally.
 
 [ Ingestion Layer ] ──> [ Asynchronous Queue ] ──> [ NLP Feature Core ] ──> [ ML Inference Engine ] ──> [ Transformation Tier ]
 Drag-and-Drop       - FastAPI Background      - Regex Layout Parser     - SMOTE Imbalance Fix       - Postgres-Dialect SQL
